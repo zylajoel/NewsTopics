@@ -1,0 +1,16 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.5.1",
+    "ejs": "*",
+    "cheerio": "~0.13.1",
+    "request": "~2.34.0",
+    "logfmt": "~1.1.2",
+    "md5": "~1.0.0"
+  }
+}
