@@ -48,7 +48,7 @@ http.createServer(app).listen(app.get('port'), function(){
 
 app.post('/login',
   passport.authenticate('local', { successRedirect: '/login',
-                                   failureRedirect: '/' })
+                                   failureRedirect: '/poop' })
 );
 
 passport.use(new LocalStrategy({
@@ -60,8 +60,8 @@ function (emailField, passwordField, done) {
       db.collection(users, function (error, collection) {
          if (!error) {
             collection.findOne({
-               'email': "joelzyla@gmail.com",
-               'password': "a7yepk3" // use there some crypto function
+               'email': 'joelzyla@gmail.com',
+               'password': 'a7yepk3' // use there some crypto function
             }, function (err, user) {
                if (err) {
                   return done(err);
