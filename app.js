@@ -47,7 +47,7 @@ http.createServer(app).listen(app.get('port'), function(){
 // Authenticate Users
 
 app.post('/login',
-  passport.authenticate('local', { successRedirect: '/',
+  passport.authenticate('local', { successRedirect: '/login',
                                    failureRedirect: '/' })
 );
 
