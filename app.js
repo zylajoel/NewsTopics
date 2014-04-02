@@ -13,8 +13,8 @@ var express = require('express')
    , logfmt = require('logfmt')
    , md5 = require('MD5')
    , mongo = require('mongodb')
-   , passport = require('passport');
-   , LocalStrategy = require('passport-local').Strategy;;
+   , passport = require('passport')
+   , LocalStrategy = require('passport-local').Strategy;
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -48,8 +48,7 @@ http.createServer(app).listen(app.get('port'), function(){
 
 app.post('/login',
   passport.authenticate('local', { successRedirect: '/',
-                                   failureRedirect: '/login',
-                                   failureFlash: true })
+                                   failureRedirect: '/' })
 );
 
 passport.use(new LocalStrategy({
@@ -61,7 +60,7 @@ function (emailField, passwordField, done) {
       db.collection(users, function (error, collection) {
          if (!error) {
             collection.findOne({
-               'email': "joelzyla@gmail.com"
+               'email': "joelzyla@gmail.com",
                'password': "a7yepk3" // use there some crypto function
             }, function (err, user) {
                if (err) {
