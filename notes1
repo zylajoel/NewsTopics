@@ -1,0 +1,48 @@
+
+
+***** Given this:
+Avalanche sweeps down Everest, killing at least 12. Rescuers search for Everest avalanche victims. Search resumes for bodies in Everest avalanche
+
+***** Find out if these match:
+
+1.
+S. Korean Police Arrest Captain of Doomed Ferry. Death toll in South Korean ferry disaster climbs to 32. Divers unable to reach bodies spotted inside sunken South Korean ferry.
+
+2.
+Deadly attack on South Sudan base may be considered a 'war crime'. 58 killed in attack on UN base in South SudanT. Attack on S Sudan UN base may be 'war crime'.
+
+
+
+
+
+
+
+* Topic Collection
+{
+    "title": "Malaysia Airlines Flight 370: Clock winding down on black box beacon battery",
+
+    "_id": "7aaca444cb5313be540d8710d76a39a2",
+
+    "created_timestamp": "timestamp",
+
+    "last_updated_timestamp": "timestamp",
+
+    "topic_keywords": ["malaysia", "airlines", "flight", "black", "box", "beacon", "battery"]
+    // combo of important words from titles of articles in this topic
+}
+
+
+* Articles Collection
+{
+    "title": "Malaysia Airlines Flight 370: Clock winding down on black box beacon battery",
+
+    "_id": "aasdf23kjh3k52jh5kj35hk32j5hk3j5",
+
+    "source": "CBS News",
+
+    "href": "http://www.hindustantimes.com/world-news/malaysianairlinemystery2014/undersea-drone-black-box-detector-head-to-join-missing-mh370-search/article1-1202132.aspx",
+
+    "added_timestamp": "timestamp",
+
+    "topic_id": "7aaca444cb5313be540d8710d76a39a2"
+}
