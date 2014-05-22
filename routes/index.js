@@ -6,7 +6,7 @@
 var request = require('request')
    , cheerio = require('cheerio')
    , express = require('express')
-   , logfmt = require("logfmt")
+   , logfmt = require('logfmt')
    , md5 = require('MD5');
 
 
